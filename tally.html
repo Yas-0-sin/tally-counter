@@ -1,18 +1,22 @@
 <html>
-    <head>
-        <title>Tally Counter</title>
-        <link rel="stylesheet" href="tally.css">
-    </head>
-    <body>
-        <div class="text">
-            <h1>Tally Counter</h1>
-        </div>
-        <div class="text">
-            <p>Clicks: <a id="clicks">0</a></p>
-        </div>
-        <div class="button">
-            <button type="button" onClick="onClick()">+</button>
-        </div>
-        <script src="click.js"></script>
-    </body>
+  <head>
+    <title>Tally Counter</title>
+    <link rel="stylesheet" href="tally.css" />
+    <!-- what else can we do in <head> tags? -->
+  </head>
+  <body>
+      <h1 class="text">Tally Counter</h1>
+      <!-- you can just assign the class to p tag. check what I did with h1 tag -->
+ƒ    <div class="text">
+      <!-- why did you use achor here. it should be a span or something else. anchors are used for navigation -->
+      <p>Clicks: <span id="clicks">0</span></p>
+    </div>
+    <div class="button">
+      <!-- no need for container dev here -->
+      <button type="button" onClick="onClick()">+</button>
+    </div>
+    <!-- nice! -->
+    <!-- do you know why we always put the scripts at the end of html file? -->
+    <script src="click.js"></script>
+  </body>
 </html>
